@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher Feedback</title>
+  <link rel="stylesheet" href="feedback.css"/>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="glass-card">
+
+    <!-- LEFT : Teacher Profile -->
+    <div class="teacher-profile">
+      <img id="teacherPhoto" src="" alt="Teacher Photo"/>
+      <h2 id="teacherName">Teacher Name</h2>
+    </div>
+
+    <!-- RIGHT : Feedback Form -->
+    <form id="feedbackForm" class="form-area">
+
+      <h2 class="form-title">Teacher Feedback Form</h2>
+
+      <!-- Student Name -->
+      <label for="studentName">Student Name</label>
+      <input 
+        type="text" 
+        id="studentName" 
+        name="studentName" 
+        placeholder="Enter student name" 
+        required 
+      />
+
+      <!-- Class & Section -->
+<label for="studentClass">Class</label>
+<input
+  type="text"
+  id="studentClass"
+  name="studentClass"
+  placeholder="Enter class (e.g. 8)"
+  required
+/>
+
+<label for="studentSection">Section</label>
+<select
+  id="studentSection"
+  name="studentSection"
+  required
+>
+  <option value="">Select Section</option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+</select>
+
+
+      <!-- Teaching Quality Rating -->
+      <label>Teaching Quality (1 = Poor, 5 = Excellent)</label>
+      <div class="number-rating">
+        <label><input type="radio" name="rating" value="1" required /><span>1</span></label>
+        <label><input type="radio" name="rating" value="2" /><span>2</span></label>
+        <label><input type="radio" name="rating" value="3" /><span>3</span></label>
+        <label><input type="radio" name="rating" value="4" /><span>4</span></label>
+        <label><input type="radio" name="rating" value="5" /><span>5</span></label>
+      </div>
+
+    <label>Clarity of Explanation</label>
+<div class="number-rating">
+  <label><input type="radio" name="clarity" value="1" required /><span>1</span></label>
+  <label><input type="radio" name="clarity" value="2" /><span>2</span></label>
+  <label><input type="radio" name="clarity" value="3" /><span>3</span></label>
+  <label><input type="radio" name="clarity" value="4" /><span>4</span></label>
+  <label><input type="radio" name="clarity" value="5" /><span>5</span></label>
+</div>
+
+<label>Support and Behaviour Towards Students</label>
+<div class="number-rating">
+  <label><input type="radio" name="behaviour" value="1" required /><span>1</span></label>
+  <label><input type="radio" name="behaviour" value="2" /><span>2</span></label>
+  <label><input type="radio" name="behaviour" value="3" /><span>3</span></label>
+  <label><input type="radio" name="behaviour" value="4" /><span>4</span></label>
+  <label><input type="radio" name="behaviour" value="5" /><span>5</span></label>
+</div>
+
+
+      <!-- Comments -->
+      <label for="comments">Your Feedback</label>
+      <textarea 
+        id="comments" 
+        name="comments" 
+        placeholder="Write your feedback here..."
+        rows="4">
+      </textarea>
+
+      <!-- Buttons -->
+      <div class="btn-group">
+        <button type="button" class="secondary" id="skipTeacherBtn">
+  This teacher did not teach me
+</button>
+
+
+        <button type="button" id="nextBtn">
+          Next Teacher
+        </button>
+
+        <button type="submit" id="submitBtn" style="display:none;">
+          Submit Feedback
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<script src="feedback.js"></script>
+</body>
+</html>

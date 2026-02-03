@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f4c81, #3b82f6);
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ),
+    linear-gradient(135deg, #0a3d62, #1e90ff);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.header p {
+  margin-top: 8px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.header h2 {
+  margin-top: 15px;
+  font-size: 1.6rem;
+  color: #ffd700;
+}
+
+/* ===== FEEDBACK SECTION ===== */
+.feedback-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.feedback-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 25px;
+  text-align: center;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.feedback-card h3 {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.feedback-card h1 {
+  margin: 10px 0;
+  font-size: 2rem;
+  color: #ffd700;
+}
+
+.feedback-card p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+/* ===== BUTTON ===== */
+.feedback-btn {
+  padding: 14px 35px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: white;
+
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+.feedback-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .header h2 {
+    font-size: 1.3rem;
+  }
+
+  .feedback-card h1 {
+    font-size: 1.6rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f4c81, #3b82f6);
+}
+
+/* ===== HEADER ===== */
+.header {
+  text-align: center;
+  color: white;
+  padding: 60px 20px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.35)
+  ), linear-gradient(135deg, #0a3d62, #1e90ff);
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.header p {
+  margin-top: 6px;
+  font-size: 1rem;
+}
+
+.header h2 {
+  margin-top: 12px;
+  font-size: 1.6rem;
+  color: #ffd700;
+}
+
+/* ===== FEEDBACK CARD ===== */
+.feedback-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.feedback-card {
+  max-width: 420px;
+  width: 100%;
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  color: white;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.feedback-card h3 {
+  font-weight: 400;
+}
+
+.feedback-card h1 {
+  margin: 10px 0;
+  color: #ffd700;
+}
+
+.feedback-card p {
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+/* ===== BUTTON ===== */
+.feedback-btn {
+  padding: 14px 36px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  transition: 0.3s ease;
+}
+
+.feedback-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== BUILDING IMAGE ===== */
+.building-section {
+  margin-top: 20px;
+  padding: 0 15px 40px;
+}
+
+.building-section img {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: block;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .feedback-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .building-section img {
+    border-radius: 16px;
+  }
+}
+
+/* ===== HEADER WITH LOGO ===== */
+.header-content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+/* text alignment */
+.header-text {
+  text-align: left;
+}
+
+/* mobile responsive */
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  .logo {
+    width: 70px;
+  }
+}
